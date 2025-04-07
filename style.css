@@ -794,6 +794,37 @@ footer {
         width: 100%;
         text-align: center;
     }
+}
+
+
+/* Fix for mobile menu visibility */
+@media (max-width: 768px) {
+    html, body {
+      overflow-x: hidden; /* Prevent horizontal scroll */
+      width: 100%;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -280px; /* Same as menu width */
+      width: 280px;
+      height: 100vh;
+      visibility: hidden; /* Completely hidden when inactive */
+      transition: transform 0.3s ease-out, visibility 0.3s;
+    }
+  
+    .nav-links.active {
+      transform: translateX(-280px);
+      visibility: visible; /* Only visible when active */
+    }
+  
+    .hamburger {
+      position: fixed;
+      right: 20px;
+      z-index: 1001;
+    }
+  }
     /* Mobile Menu Fixes */
 @media (max-width: 768px) {
     .hamburger {
@@ -817,7 +848,7 @@ footer {
         position: relative;
     }
 }
-}
+
 
 @media (max-width: 576px) {
     .section {
