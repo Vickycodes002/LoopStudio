@@ -295,6 +295,7 @@ header {
 .work {
     background: linear-gradient(to bottom, rgba(11, 15, 26, 0.9), rgba(11, 15, 26, 1));
     position: relative;
+    /* z-index: 1; */
 }
 
 .work::before {
@@ -793,6 +794,29 @@ footer {
         width: 100%;
         text-align: center;
     }
+    /* Mobile Menu Fixes */
+@media (max-width: 768px) {
+    .hamburger {
+        position: fixed;
+        top: 30px;
+        right: 5%;
+        z-index: 1003; /* Highest priority */
+    }
+
+    .nav-links {
+        z-index: 1002; /* Below hamburger */
+    }
+
+    .nav-overlay {
+        z-index: 1001; /* Below both */
+    }
+
+    /* Make sure nothing else interferes */
+    header {
+        z-index: 1000;
+        position: relative;
+    }
+}
 }
 
 @media (max-width: 576px) {
