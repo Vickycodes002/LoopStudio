@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopStudio | Creative Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="#" class="logo">Loop<span>Studio</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Where Creativity <span>Loops</span> Into Life</h1>
+            <p>We turn ideas into stunning visuals, motion, and interactive design.</p>
+            <div class="cta-buttons">
+                <a href="#work" class="btn btn-primary">Explore Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Our team working">
+            </div>
+            <div class="about-content">
+                <h3>We Are LoopStudio</h3>
+                <p>Founded in 2015, LoopStudio is a creative agency dedicated to pushing boundaries and creating memorable experiences. Our team of designers, developers, and strategists work together to bring your vision to life.</p>
+                <p>We believe in the power of storytelling through design and technology. Every project we undertake is approached with fresh eyes and innovative thinking, ensuring unique solutions that stand out in today's crowded digital landscape.</p>
+                <p>Our mission is to create work that not only looks beautiful but also delivers real results for our clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section class="section work" id="work">
+        <h2 class="section-title">Our Work</h2>
+        <div class="work-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="3d">3D</button>
+            <button class="filter-btn" data-filter="motion">Motion</button>
+        </div>
+        <div class="work-grid">
+            <div class="work-item" data-category="branding">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop" alt="Project 1">
+                </div>
+                <div class="work-item-info">
+                    <h3>Nova Brand Identity</h3>
+                    <span>Branding</span>
+                </div>
+            </div>
+            <div class="work-item" data-category="3d">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2232&auto=format&fit=crop" alt="Project 2">
+                </div>
+                <div class="work-item-info">
+                    <h3>Cosmic Explorer</h3>
+                    <span>3D</span>
+                </div>
+            </div>
+            <div class="work-item" data-category="motion">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop" alt="Project 3">
+                </div>
+                <div class="work-item-info">
+                    <h3>Urban Motion</h3>
+                    <span>Motion</span>
+                </div>
+            </div>
+            <div class="work-item" data-category="branding">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop" alt="Project 4">
+                </div>
+                <div class="work-item-info">
+                    <h3>EcoLife Packaging</h3>
+                    <span>Branding</span>
+                </div>
+            </div>
+            <div class="work-item" data-category="3d">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1639762681295-6637795c01cb?q=80&w=2187&auto=format&fit=crop" alt="Project 5">
+                </div>
+                <div class="work-item-info">
+                    <h3>Digital Sculpture</h3>
+                    <span>3D</span>
+                </div>
+            </div>
+            <div class="work-item" data-category="motion">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?q=80&w=1974&auto=format&fit=crop" alt="Project 6">
+                </div>
+                <div class="work-item-info">
+                    <h3>Abstract Motion</h3>
+                    <span>Motion</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <h2 class="section-title">Our Process</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Discover</h3>
+                    <p>We begin by deeply understanding your business, goals, and audience. Through research and workshops, we uncover insights that inform our creative direction.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Concept</h3>
+                    <p>Our team brainstorms and develops multiple creative concepts. We refine these ideas into compelling solutions that align with your objectives.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Design</h3>
+                    <p>With a chosen direction, we craft every detail with precision. Our iterative process ensures the design evolves with your feedback at each stage.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Deliver</h3>
+                    <p>We implement the final solution with technical excellence and provide all necessary assets and guidelines for ongoing success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <h2 class="section-title">What Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"LoopStudio transformed our brand identity completely. Their attention to detail and creative approach exceeded all our expectations."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>CEO, NovaTech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Working with LoopStudio was a game-changer for our product launch. Their 3D visuals captured exactly what we envisioned and more."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                    </div>
+                    <div class="author-info">
+                        <h4>Michael Chen</h4>
+                        <p>Marketing Director, Cosmo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The motion graphics created by LoopStudio brought our campaign to life. Their team is professional, creative, and a pleasure to work with."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez">
+                    </div>
+                    <div class="author-info">
+                        <h4>Emma Rodriguez</h4>
+                        <p>Creative Director, UrbanStyle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" id="contact">
+        <h2>Let's Build Something Beautiful Together</h2>
+        <a href="#contact" class="btn btn-primary"><span>Start a Project</span></a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <a href="#" class="footer-logo">Loop<span>Studio</span></a>
+                <p>We are a creative agency specializing in branding, motion design, and interactive experiences that captivate audiences.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Brand Identity</a></li>
+                    <li><a href="#">3D Design</a></li>
+                    <li><a href="#">Motion Graphics</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">UI/UX</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:hello@loopstudio.com">hello@loopstudio.com</a></li>
+                    <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+                    <li>123 Creative Ave, Suite 500</li>
+                    <li>San Francisco, CA 94107</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 LoopStudio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+// </body>
+// </html>
